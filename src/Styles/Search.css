@@ -1,0 +1,58 @@
+/* MilkFarmSearch.css */
+.search-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    padding: 12px 20px;
+    border: 2px solid #f0f0f0;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #4CAF50;
+  }
+  
+  .search-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .milk-farm-search-container {
+      padding: 10px;
+    }
+    
+    .search-form {
+      flex-direction: column;
+    }
+    
+    .search-input, .search-button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }

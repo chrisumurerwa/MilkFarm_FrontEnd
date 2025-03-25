@@ -11,6 +11,8 @@ import Mentorship from "./Components/Mentorship";
 import Veterinary from "./Components/Veterinary";
 import MarketLinkagesPage from "./Components/MarketLinkages";
 import Main from "./Dashboard/components/Main";
+import GetInTouch from "./Components/GetInTouch";
+import Search from "./Components/Search";
 import DashboardLayout from "./Dashboard/components/DashboardLayout";
 
 import Users from "./Dashboard/components/Users";
@@ -33,6 +35,8 @@ function App() {
               <Route path="/Contact" element={<Contact />} />
               <Route path="/Veterinary" element={<Veterinary/>}/>
               <Route path="/MarketLinkages" element={<MarketLinkagesPage/>}/>
+              <Route path="/GetInTouch" element={<GetInTouch/>}/>
+              <Route path="/Search" element={<Search/>}/>
             </Route>
 
             <Route path="/Login" element={<Login/>} />

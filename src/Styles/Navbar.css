@@ -78,9 +78,11 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  text-decoration: none;
 }
 
 .get-in-touch-btn {
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -104,14 +106,10 @@ body {
 .mail-icon {
   font-size: 16px;
   flex-shrink: 0;
+  
 }
 
-.cart-btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .login-button {
   width: 30%;
   padding: 8px 16px;
@@ -150,21 +148,7 @@ body {
   height: 36px;
 }
 
-.cart-count {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background-color: #4682b4;
-  color: white;
-  font-size: 10px;
-  font-weight: bold;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 /* Bottom Navigation */
 .bottom-nav {

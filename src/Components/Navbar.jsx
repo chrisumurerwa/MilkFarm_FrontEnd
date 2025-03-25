@@ -27,17 +27,17 @@ const Navbar = () => {
           </div>
           
           <div className="actions">
-            <button className="get-in-touch-btn">
+          <Link to="GetInTouch" style={{textDecoration:"none"}}><button className="get-in-touch-btn">
               <HiOutlineMail className="mail-icon" />
               GET IN TOUCH
             </button>
-            <button className="search-btn">
+            </Link>  
+
+           <Link TO="search-btn"> <button className="search-btn">
               <FaSearch />
             </button>
-            <button className="cart-btn">
-              <FaShoppingCart />
-              <span className="cart-count">2</span>
-            </button>
+            </Link>
+           
             <button class="login-button"><a href='/Login' style={{textDecoration: "none", color:'inherit'}}>Login</a></button>
           
 

@@ -1,4 +1,4 @@
-/* General Page Styles */
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -8,7 +8,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Left Section */
 .left-section {
   flex: 1;
   max-width: 40%;
@@ -45,7 +44,6 @@
   background: #1d3c1a;
 }
 
-/* Right Section - Navigation */
 .nav-section {
   flex: 1.2;
   display: flex;
@@ -79,7 +77,6 @@
   color: rgb(219, 166, 166);
 }
 
-/* Submenu */
 .sub-menu {
   width: 100%;
   background: #eef7ee;
@@ -121,7 +118,6 @@
   text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;

@@ -1,6 +1,6 @@
 import React from "react";
 import '../Styles/Mentorship.css'
-import Meback from "../Assets/Mentback.jpeg";
+import Meback from "../assets/Mentback.jpeg";
 import Image1 from "../assets/m1.jpg";
 import Image2 from "../assets/m2.jpg";
 import Image3 from "../assets/m3.jpg";

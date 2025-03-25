@@ -1,6 +1,5 @@
 import React from "react";
 import '../Styles/Mentorship.css'
-import mentback from '../assets/Mentback.jpeg';
 import Image1 from "../assets/m1.jpg";
 import Image2 from "../assets/m2.jpg";
 import Image3 from "../assets/m3.jpg";
@@ -10,7 +9,7 @@ const Mentorship = () => {
       {/* Hero Section */}
       
 
-<div className="hero" style={{ backgroundImage: `url(${mentback})` }}>
+<div className="hero" style={{ backgroundImage: `url('/Mentback.jpeg')` }}>
   <h1>Empowering Dairy Farmers for a Sustainable Future</h1>
   <h4>Join our mentorship program to transform your dairy farming journey.</h4>
   <button className="Button">Apply Now</button>

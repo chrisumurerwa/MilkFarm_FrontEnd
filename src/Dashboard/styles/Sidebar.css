@@ -1,0 +1,114 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f9fafb;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar Container */
+.Sidebar-container {
+  position: fixed;
+  top: 0; /* Ensure it stays at the top */
+  left: 0;
+  width: 250px;
+  height: 100vh; /* Full viewport height */
+  background: #f0f4f8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #dce1e6;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #2d3748;
+  padding-left: 10px;
+}
+
+/* Sidebar Menu */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 8px;
+  border-radius: 8px;
+  list-style-type: none;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-icon {
+  margin-right: 12px;
+  font-size: 20px;
+  min-width: 20px;
+}
+
+/* Hover effects */
+.sidebar a:hover {
+  background-color: #e2e8f0;
+  color: #2c5282;
+  transform: translateX(5px);
+}
+
+/* Active link styling */
+.sidebar a.active {
+  background: #3182ce;
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a.active .sidebar-icon {
+  color: white;
+}
+
+/* Sidebar for Mobile */
+@media (max-width: 768px) {
+  .Sidebar-container {
+    width: 220px;
+  }
+
+  .sidebar a {
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Sidebar-container {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+
+  .Sidebar-container.show {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggle {
+    display: block;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 1000;
+  }
+}

@@ -1,0 +1,188 @@
+.contact {
+  margin-left: 0;
+  padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact h1 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(56, 33, 78);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 40px; /* Adds more space above the container */
+}
+
+.info {
+  flex: 1;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 300px; /* Increase the height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form {
+  flex: 2;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px; /* Adds space below the headers */
+}
+
+/* Adds more space between the header and the .info div */
+.header {
+  margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+
+
+.form {
+ 
+  flex: 2;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.form p{
+margin-top: 1rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.form-group {
+  
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.textarea-field {
+  height: 100px;
+  resize: none;
+}
+
+.submit-btn {
+  display: block;
+  width: 70%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+
+.submit-btn:hover {
+background-color: burlywood;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+
+.image {
+  display: flex;
+  margin: 2rem auto;
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  max-height: 20rem;
+  justify-content: center;
+}
+
+.order {
+  background-color: #cdc3c3;
+  padding: 1rem 0;
+}
+
+.order p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.connect {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  height: 40px;
+  margin-bottom: 1rem;
+  width: 100px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .contact h1 {
+      font-size: 1.8rem;
+  }
+  
+  .info h2 {
+      font-size: 1.3rem;
+  }
+  
+  .submit-btn {
+      width: 70%;
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-group {
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .input-field {
+      width: 100%;
+  }
+  
+  .contact h1 {
+      font-size: 1.5rem;
+  }
+  
+  .submit-btn {
+      width: 80%;
+      font-size: 16px;
+  }
+  
+  .image {
+      height: auto;
+      max-height: 15rem;
+  }
+}

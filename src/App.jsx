@@ -16,7 +16,8 @@ import Search from "./Components/Search";
 import DashboardLayout from "./Dashboard/components/DashboardLayout";
 import SingleAppointment from "./Components/SingleAppointment";
 import SingleProduct from "./Components/SingleProduct";
-// import SingleFarm from "./Components/SingleFarm";
+import Singlefarm from "./Components/SingleFarm";
+import SingleProcess from "./Components/SingleProcess";
 
 import Users from "./Dashboard/components/Users";
 import Milkproduction from "./Dashboard/components/Milkproduction";
@@ -42,7 +43,9 @@ function App() {
               <Route path="/GetInTouch" element={<GetInTouch/>}/>
               <Route path="/Search" element={<Search/>}/>
               <Route path="/single-product" element={<SingleProduct/>}/>
-              {/* <Route path="/single-farm" element={<SingleFarm/>}/> */}
+              <Route path="/single-farm" element={<Singlefarm/>}/>
+              <Route path="/single-process" element={<SingleProcess/>}/>
+              
             </Route>
 
             <Route path="/Login" element={<Login/>} />

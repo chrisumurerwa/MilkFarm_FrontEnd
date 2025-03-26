@@ -34,7 +34,8 @@ const Farming = () => {
          <img src={Image3} alt='contact' className='image'/>
           <h3>WORKING PROCESS</h3>
           <p>Our working process includes a few elements based on both traditional and innovative dairy farming approaches.</p>
-          <button>READ MORE</button>
+         <Link to="/single-process" ><button>READ MORE</button>
+         </Link>
         </div>
       </div>
 

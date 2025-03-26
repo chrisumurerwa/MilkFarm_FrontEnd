@@ -1,0 +1,83 @@
+.single-farm-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .farm-cards{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .farm-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .farm-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .product-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .product-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .product-sections img{
+    display: flex;
+  }
+  .product-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-row.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .farm-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .product-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .product-content h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .product-content p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  
+  
+  

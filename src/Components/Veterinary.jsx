@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/Veterinary.css';
+import { Link } from 'react-router-dom';
 // import vetImage from '../assets/veterinary-image.jpg'; // Import your veterinary image
 
 function Veterinary() {
@@ -76,7 +77,8 @@ function Veterinary() {
                 <span className="contact-value">Monday-Friday: 8am-5pm<br />Weekend Emergency Service Available</span>
               </div>
             </div>
-            <button className="contact-button">Schedule an Appointment</button>
+            <Link to="/SingleAppointment"><button className="contact-button">Schedule an Appointment</button>
+            </Link>
           </div>
         </div>
       </div>

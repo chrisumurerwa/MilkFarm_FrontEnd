@@ -33,7 +33,7 @@ const Navbar = () => {
             </button>
             </Link>  
 
-           <Link TO="search-btn"> <button className="search-btn">
+           <Link to ="/Search"> <button className="search-btn">
               <FaSearch />
             </button>
             </Link>

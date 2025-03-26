@@ -14,6 +14,9 @@ import Main from "./Dashboard/components/Main";
 import GetInTouch from "./Components/GetInTouch";
 import Search from "./Components/Search";
 import DashboardLayout from "./Dashboard/components/DashboardLayout";
+import SingleAppointment from "./Components/SingleAppointment";
+import SingleProduct from "./Components/SingleProduct";
+// import SingleFarm from "./Components/SingleFarm";
 
 import Users from "./Dashboard/components/Users";
 import Milkproduction from "./Dashboard/components/Milkproduction";
@@ -34,9 +37,12 @@ function App() {
               <Route path="/Mentorship" element={<Mentorship/>}/>
               <Route path="/Contact" element={<Contact />} />
               <Route path="/Veterinary" element={<Veterinary/>}/>
+              <Route path="/SingleAppointment" element={<SingleAppointment/>}/>
               <Route path="/MarketLinkages" element={<MarketLinkagesPage/>}/>
               <Route path="/GetInTouch" element={<GetInTouch/>}/>
               <Route path="/Search" element={<Search/>}/>
+              <Route path="/single-product" element={<SingleProduct/>}/>
+              {/* <Route path="/single-farm" element={<SingleFarm/>}/> */}
             </Route>
 
             <Route path="/Login" element={<Login/>} />

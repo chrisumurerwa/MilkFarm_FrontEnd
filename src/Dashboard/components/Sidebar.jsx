@@ -6,6 +6,9 @@ import { TbCheckupList } from "react-icons/tb";
 import { FaRegUser } from "react-icons/fa";
 import { FaBaby } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { LiaHireAHelper } from "react-icons/lia";
+import { RiListOrdered2 } from "react-icons/ri";
+import { FaCalendarAlt } from "react-icons/fa";
 const Sidebar = () => {
   // Get current path to determine active link
   const currentPath = window.location.pathname;
@@ -23,7 +26,23 @@ const Sidebar = () => {
           </li>
           <li>
             <Link to="/Users" className={currentPath === "/Users" ? "active" : ""}>
-              <FaRegUser className="sidebar-icon" /> User
+              <FaRegUser className="sidebar-icon" /> Admin
+            </Link>
+          </li>
+          <li>
+            <Link to="/Users" className={currentPath === "/Users" ? "active" : ""}>
+              <FaCalendarAlt className="sidebar-icon" /> Appointment
+            </Link>
+          </li>
+          <li>
+            <Link to="/Users" className={currentPath === "/Users" ? "active" : ""}>
+              <RiListOrdered2 className="sidebar-icon" /> Order milk
+            </Link>
+
+          </li>
+          <li>
+            <Link to="/Users" className={currentPath === "/Users" ? "active" : ""}>
+              <LiaHireAHelper className="sidebar-icon" />Help center
             </Link>
           </li>
           <li>

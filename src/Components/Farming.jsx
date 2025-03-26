@@ -7,6 +7,7 @@ import Image4 from '../assets/milk.jpeg';
 import Image5 from'../assets/cheese.jpeg';
 import Image6 from '../assets/special cheese.jpeg';
 import Image7 from '../assets/milkbottle.jpg';
+import { Link } from 'react-router-dom';
 const Farming = () => {
   return (
     <div className="farming-container">
@@ -19,13 +20,15 @@ const Farming = () => {
          
           <h3>OUR PRODUCTS</h3>
           <p>We provide our customers with a wide variety of dairy products, from  milk-farm to butter and cheese.</p>
-          <button>READ MORE</button>
+         <Link to="/single-product"> <button>READ MORE</button>
+         </Link>
         </div>
         <div className="info-card">
          <img src={Image2} alt='contact' className='image'/>
           <h3>WHY MILK-FARM?</h3>
           <p>We believe it's the best way to inspire our community to try useful & natural products, which we hope they like.</p>
-          <button>READ MORE</button>
+          < Link to="/single-farm"><button>READ MORE</button>
+          </Link>
         </div>
         <div className="info-card">
          <img src={Image3} alt='contact' className='image'/>

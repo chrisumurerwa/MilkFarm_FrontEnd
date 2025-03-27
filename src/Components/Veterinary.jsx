@@ -32,7 +32,7 @@ function Veterinary() {
               <p>Regular health assessments and vaccination programs tailored to your farm's specific needs. 
                 We develop customized vaccination schedules to protect your animals from common diseases 
                 and ensure optimal health.</p>
-              <a href="#" className="learn-more">Learn more</a>
+                <Link to="/Healthcheckup" className="learn-more">Learn more</Link>
             </div>
             
             <div className="service-card">
@@ -43,7 +43,7 @@ function Veterinary() {
               <p>Comprehensive plans to prevent disease outbreaks and limit spread if they occur. 
                 Our biosecurity protocols and monitoring systems help identify potential issues before 
                 they become serious problems.</p>
-              <a href="#" className="learn-more">Learn more</a>
+                <Link to="/Diseaseprevention" className="learn-more">Learn more</Link>
             </div>
             
             <div className="service-card">
@@ -54,7 +54,7 @@ function Veterinary() {
               <p>24/7 emergency services for critical situations. Our veterinary team is always 
                 available to provide urgent care when your animals need it most, with mobile units 
                 ready to visit your farm at any time.</p>
-              <a href="#" className="learn-more">Learn more</a>
+                <Link to="/Emergencycare" className="learn-more">Learn more</Link>
             </div>
           </div>
         </div>

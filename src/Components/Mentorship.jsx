@@ -3,6 +3,7 @@ import '../Styles/Mentorship.css'
 import Image1 from "../assets/m1.jpg";
 import Image2 from "../assets/m2.jpg";
 import Image3 from "../assets/m3.jpg";
+import { Link } from "react-router-dom";
 const Mentorship = () => {
   return (
     <div className="mentorship">
@@ -12,7 +13,8 @@ const Mentorship = () => {
 <div className="hero" style={{ backgroundImage: `url('/Mentback.jpeg')` }}>
   <h1>Empowering Dairy Farmers for a Sustainable Future</h1>
   <h4>Join our mentorship program to transform your dairy farming journey.</h4>
-  <button className="Button">Apply Now</button>
+  <Link to="/ApplyNow"><button className="Button">Apply Now</button>
+  </Link>
 </div>
     
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/SingleProcess.css';
+import { Link } from 'react-router-dom';
 
 const SingleProcess = () => {
   const processSteps = [
@@ -52,7 +53,8 @@ const SingleProcess = () => {
 
       <div className="cta-section">
         <h2>Discover Our Commitment to Quality</h2>
-        <button className="cta-button">Learn More About Our Process</button>
+       <Link to="/Dairlyfarmprocess" ><button className="cta-button">Learn More About Our Process</button>
+       </Link>
       </div>
     </div>
   );

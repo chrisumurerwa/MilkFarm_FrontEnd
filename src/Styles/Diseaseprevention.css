@@ -1,0 +1,197 @@
+/* MilkFarmDiseasePrevention.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --primary-color: #2c5e91;
+  --secondary-color: #4ca6e8;
+  --accent-color: #f8d568;
+  --text-primary: #333;
+  --text-secondary: #666;
+  --background-light: #f4f7fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-light);
+  color: var(--text-primary);
+}
+
+.milk-farm-disease-prevention-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.prevention-header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.prevention-header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prevention-core-challenges {
+  margin-bottom: 3rem;
+}
+
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.challenge-card {
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.challenge-card:hover {
+  transform: translateY(-10px);
+}
+
+.challenge-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.prevention-strategies {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.strategies-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.strategies-text ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.strategies-text li {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.strategies-text li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+}
+
+.strategies-diagnostic {
+  flex: 0 0 300px;
+}
+
+.diagnostic-card {
+  background-color: var(--background-light);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.diagnostic-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.milk-quality-impact {
+  margin-bottom: 3rem;
+}
+
+.quality-metrics {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.metric-card {
+  flex: 1;
+  background-color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.biosecurity-protocols {
+  margin-bottom: 3rem;
+}
+
+.protocol-steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.protocol-step {
+  flex: 1;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.step-number {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--secondary-color);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .challenges-grid,
+  .strategies-content,
+  .quality-metrics,
+  .protocol-steps {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .challenges-grid {
+    grid-template-columns: 1fr;
+  }
+}

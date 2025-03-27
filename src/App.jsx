@@ -18,6 +18,11 @@ import SingleAppointment from "./Components/SingleAppointment";
 import SingleProduct from "./Components/SingleProduct";
 import Singlefarm from "./Components/SingleFarm";
 import SingleProcess from "./Components/SingleProcess";
+import Dairlyfarmprocess from "./Components/Dairlyfarmprocess";
+import ApplyNow from "./Components/ApplyNow";
+import Healthcheckup from "./Components/Healthcheckup";
+import Diseaseprevention from "./Components/Diseaseprevention";
+import Emergencycare from "./Components/Emergencycare";
 
 import Users from "./Dashboard/components/Users";
 import Milkproduction from "./Dashboard/components/Milkproduction";
@@ -45,6 +50,12 @@ function App() {
               <Route path="/single-product" element={<SingleProduct/>}/>
               <Route path="/single-farm" element={<Singlefarm/>}/>
               <Route path="/single-process" element={<SingleProcess/>}/>
+              <Route path="/Dairlyfarmprocess" element={<Dairlyfarmprocess/>}/>
+              <Route path="/ApplyNow" element={<ApplyNow/>}/>
+              <Route path="/Healthcheckup" element={<Healthcheckup/>}/>
+              <Route path="/Diseaseprevention" element={<Diseaseprevention/>}/>
+              <Route path="/Emergencycare" element={<Emergencycare/>}/>
+
               
             </Route>
 

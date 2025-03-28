@@ -33,10 +33,10 @@ const Navbar = () => {
             </button>
             </Link>  
 
-           <Link to ="/Search"> <button className="search-btn">
+           {/* <Link to ="/Search"> <button className="search-btn">
               <FaSearch />
             </button>
-            </Link>
+            </Link> */}
            
             <button class="login-button"><a href='/Login' style={{textDecoration: "none", color:'inherit'}}>Login</a></button>
           

@@ -28,7 +28,22 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+  .customer-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
   
+  .customer-input:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+  }
+  
+ 
   .book-btn {
     margin-top: 15px;
     padding: 10px;

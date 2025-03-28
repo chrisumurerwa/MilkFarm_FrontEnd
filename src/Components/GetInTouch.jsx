@@ -15,9 +15,21 @@ const GetInTouch = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    // Form submission logic can go here (e.g., sending data to an API)
+   
+    const response =await fetch('http://localhost:5001/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+    if (!response.ok) {
+      alert('Error submitting application. Please try again later.');
+      return;
+    }
+    // bmission logic can go here (e.g., sending data to an API)
     console.log('Form submitted:', formData);
     setFormData({
       name: '',

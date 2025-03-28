@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import '../Styles/ApplyNow.css';
+import { useNavigate } from 'react-router-dom';
 
 const ApplyNow = () => {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
-    phone: '',
+    phoneNumber: '',
     farmLocation: '',
     farmSize: '',
-    experienceYears: '',
-    motivationLetter: '',
-    farmType: ''
+    yearsOfDairyFarming: '',
+    mentorshipGoals: '',
+    typeOfDairyFarm: ''
   });
 
   const handleChange = (e) => {
@@ -20,12 +21,25 @@ const ApplyNow = () => {
       [name]: value
     }));
   };
+  const navigate=useNavigate()
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    // Add form submission logic here
+    const response =await fetch('http://localhost:5001/apply', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+    if (!response.ok) {
+      alert('Error submitting application. Please try again later.');
+      return;
+    }
+    // Reset form after successful submission
     console.log('Application Submitted:', formData);
-    alert('Thank you for your application! We will review it shortly.');
+    navigate('/Dashboard')
+
   };
 
   return (
@@ -68,8 +82,8 @@ const ApplyNow = () => {
             <input
               type="tel"
               id="phone"
-              name="phone"
-              value={formData.phone}
+              name="phoneNumber"
+              value={formData.phoneNumber}
               onChange={handleChange}
               required
               placeholder="Enter your phone number"
@@ -107,8 +121,8 @@ const ApplyNow = () => {
             <input
               type="number"
               id="experienceYears"
-              name="experienceYears"
-              value={formData.experienceYears}
+              name="yearsOfDairyFarming"
+              value={formData.yearsOfDairyFarming}
               onChange={handleChange}
               required
               placeholder="Years of experience"
@@ -119,8 +133,8 @@ const ApplyNow = () => {
             <label htmlFor="farmType">Type of Dairy Farm</label>
             <select
               id="farmType"
-              name="farmType"
-              value={formData.farmType}
+              name="typeOfDairyFarm"
+              value={formData.typeOfDairyFarm}
               onChange={handleChange}
               required
             >
@@ -136,8 +150,8 @@ const ApplyNow = () => {
             <label htmlFor="motivationLetter">Why Do You Want to Join Our Mentorship Program?</label>
             <textarea
               id="motivationLetter"
-              name="motivationLetter"
-              value={formData.motivationLetter}
+              name="mentorshipGoals"
+              value={formData.mentorshipGoals}
               onChange={handleChange}
               required
               placeholder="Share your dairy farming goals and aspirations"

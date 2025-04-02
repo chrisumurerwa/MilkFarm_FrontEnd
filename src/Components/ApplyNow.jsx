@@ -25,7 +25,7 @@ const ApplyNow = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    const response =await fetch('http://localhost:5001/apply', {
+    const response =await fetch('https://milkfarm-backend-1.onrender.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ const ApplyNow = () => {
     }
     // Reset form after successful submission
     console.log('Application Submitted:', formData);
-    navigate('/Dashboard')
+ 
 
   };
 

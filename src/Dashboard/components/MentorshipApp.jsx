@@ -1,14 +1,14 @@
 import React from 'react';
 import '../styles/MentorshipApp.css';
-
-
+import { useState } from 'react';
+import { useEffect } from 'react';
 function MentorshipApp() {
   return (
     <div className="mentorship-container">
       <h1 className="page-title">Mentorship Applications</h1>
       <div className="table-container">
-     
-          
+        <table className="stylish-table">
+          <thead>
             <tr>
               <th>Full Name</th>
               <th>Email</th>
@@ -19,8 +19,8 @@ function MentorshipApp() {
               <th>Mentorship Goals</th>
               <th>Type of Dairy Farm</th>
             </tr>
-          
-          {/* <tbody>
+          </thead>
+          <tbody>
             <tr>
               <td>John Doe</td>
               <td>john@example.com</td>
@@ -31,8 +31,8 @@ function MentorshipApp() {
               <td>Improve milk production</td>
               <td>Organic Dairy</td>
             </tr>
-          </tbody> */}
-       
+          </tbody>
+        </table>
       </div>
     </div>
   );

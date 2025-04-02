@@ -15,7 +15,7 @@ const DiseasePrevention = () => {
       <header className="prevention-header">
         <div className="header-content">
           <h1>Milk Farm Disease Prevention Strategies</h1>
-          <p>Protecting Herd Health and Milk Quality</p>
+          <p>Protecting cattle  Health and Milk Quality</p>
         </div>
       </header>
 

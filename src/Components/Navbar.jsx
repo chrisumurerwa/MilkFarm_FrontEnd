@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="address-info">
             <FaMapMarkerAlt className="location-icon" />
             <div className="address-text">
-              <p>Kigali Rwanda</p>
+              <p>Nyagatare</p>
               
             </div>
           </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
         <li className="nav-item"><a href="/Mentorship ">Mentorship program</a></li>
         <li className="nav-item"><a href="/Veterinary ">Veterinary service</a></li>
         <li className="nav-item"><a href="/Marketlinkages">Market linkages</a></li>
-        <li className="nav-item"><a href="/CONTACT">CONTACT US</a></li>
+        {/* <li className="nav-item"><a href="/CONTACT">CONTACT US</a></li> */}
       </ul>
     </div>
     </nav>

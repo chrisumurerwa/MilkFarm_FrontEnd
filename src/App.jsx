@@ -24,10 +24,12 @@ import Healthcheckup from "./Components/Healthcheckup";
 import Diseaseprevention from "./Components/Diseaseprevention";
 import Emergencycare from "./Components/Emergencycare";
 
-import Users from "./Dashboard/components/Users";
+
+import Appointment from "./Dashboard/components/Appointment";
 import Milkproduction from "./Dashboard/components/Milkproduction";
 import MedicalCheckup from "./Dashboard/components/MedicalCheckup";
 import Births from "./Dashboard/components/Births";
+import MentorshipApp from "./Dashboard/components/MentorshipApp";
 
 function App() {
   return (
@@ -63,7 +65,8 @@ function App() {
             <Route path="/" element={<DashboardLayout/>} >
             <Route path="/" index element={<Main/>}/>
             <Route path="/Dashboard"  element={<Main/>}/>
-            <Route path="/Users" element={<Users/>}/>
+            <Route path="/MentorshipApp" element={<MentorshipApp/>}/>
+            <Route path="/Appointment" element={<Appointment/>}/>
             <Route path="/Milkproduction" element={<Milkproduction/>}/>
             <Route path="/MedicalCheckup" element={<MedicalCheckup/>}/>
             <Route path="/Births" element={<Births/>}/>

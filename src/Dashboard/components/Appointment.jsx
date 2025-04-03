@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Axios from "axios";
+
 import { useEffect } from "react";
 import axios from "axios";
 
@@ -42,7 +42,7 @@ const Appointment = () => {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <button className="search-button"></button>
+          {/* <button className="search-button"></button> */}
         </div>
       </div>
 

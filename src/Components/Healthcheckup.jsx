@@ -1,6 +1,6 @@
 import React from 'react';
 import { Shield, Syringe, Stethoscope, CalendarCheck } from 'lucide-react';
-import '../Styles/healthcheckup.css';
+import '../Styles/Healthcheckup.css'; // Ensure this path is correct
 import Image from '../assets/cow-checkup.jpeg'; // Corrected import path
 
 const Healthcheckup = () => {

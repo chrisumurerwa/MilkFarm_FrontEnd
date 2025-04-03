@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "../styles/Login.css";
+import "../Styles/Login.css";
 import logo from "../assets/logo.png"; // Ensure the path matches your project
 
 const Login = () => {

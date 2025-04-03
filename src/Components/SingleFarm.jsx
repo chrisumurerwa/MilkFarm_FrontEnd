@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Singlefarm.css";
+import "../Styles/SingleFarm.css";
 import Image from "../assets/cheese.jpeg";
 import Image1 from "../assets/milk.jpeg";
 

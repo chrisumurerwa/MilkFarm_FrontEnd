@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import '../styles/SingleAppointment.css';
+import '../Styles/SingleAppointment.css';
 
 function SingleAppointment() {
   const { id } = useParams(); // Assuming appointments have unique IDs

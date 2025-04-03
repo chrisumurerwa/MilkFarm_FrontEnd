@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Main.css'
+import '../styles/Main.css';
 function Main() {
   return (
     <div className="dashboard-container1">

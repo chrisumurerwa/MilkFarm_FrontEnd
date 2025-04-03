@@ -7,7 +7,7 @@ import {
   Stethoscope, 
   AlertCircle 
 } from 'lucide-react';
-import '../Styles/EmergencyCare.css';
+import '../Styles/Emergencycare.css';
 
 const EmergencyCare = () => {
   const [activeTab, setActiveTab] = useState('services');

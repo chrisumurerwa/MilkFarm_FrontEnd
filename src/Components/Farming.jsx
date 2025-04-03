@@ -1,8 +1,8 @@
 import React from 'react';
 import '../Styles/Farming.css';
-import Image1 from '../assets/p1.png';
-import Image2 from '../assets/p2.png';
-import Image3 from '../assets/p3.png';
+import Image1 from '../assets/P1.png';
+import Image2 from '../assets/P2.png';
+import Image3 from '../assets/P3.png';
 import Image4 from '../assets/milk.jpeg';
 import Image5 from'../assets/cheese.jpeg';
 import Image6 from '../assets/special cheese.jpeg';

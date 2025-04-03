@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Styles/Home.css'
 import Image from '../assets/cow.jpg'
-import Image1 from '../assets/H22.jpeg';
+import Image1 from '../assets/h22.jpeg';
 import Image2 from '../assets/food.jpeg';
 import Image3 from '../assets/H1.jpeg';
 import Image4 from '../assets/milk assist.jpeg';
